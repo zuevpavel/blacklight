@@ -1,0 +1,40 @@
+.modal
+    .modal__container(data-target="first")
+        button.modal-close
+        .modal__content
+            .modal__logo
+                a.header__logo-link(href="/#")
+                    img.logo-contact(src="../img/logo-contact.svg", alt="" width="109" height="109")
+
+            .modal__name
+                a.header__logo-link(href="/#")
+                    svg.header__logo-img(width="94" height="20")
+                        use(xlink:href="#logo-icon")
+            .modal__contact
+                //- .hero__bottom.box
+                a.hero__link(href="tel:+74993403383") +7 499 340 33 83
+                    svg(width="18" height="18")
+                        use(xlink:href="#phone-icon")
+                a.hero__link(href="mailto:info@blacklight.ru") info@blacklight.ru
+                    svg(width="18" height="18")
+                        use(xlink:href="#email-icon")
+                a.hero__link(href="https://goo.gl/maps/JLTgfscspkLMZ3zdA" target="_blank") Москва, Нижняя Красносельская, <br>35 стр 59, офис 301
+                    svg(width="18" height="18")
+                        use(xlink:href="#location-icon")
+            .modal__social
+                .header__content-item.header__social
+                    a.header__social-link(href="/#")
+                        svg(width="18" height="16")
+                            use(xlink:href="#youtube-icon")
+                    a.header__social-link(href="")
+                        svg(width="18" height="16")
+                            use(xlink:href="#instagram-icon")
+                    a.header__social-link(href="")
+                        svg(width="18" height="16")
+                            use(xlink:href="#facebook-icon")
+
+
+    .modal__container(data-target="second")
+        button.modal-close
+        .modal__content
+            h2 form

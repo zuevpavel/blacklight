@@ -1,0 +1,17 @@
+extends common/layout.pug
+
+block meta
+    title Demo
+    meta(name='description', content='')
+
+block head
+    link(rel='stylesheet', href='css/index-style.min.css')
+
+
+block content
+    include blocks/index/hero/hero.pug
+    include blocks/index/desktop-window/desktop-window.pug
+
+    include blocks/index/modal-js/modal-js.pug
+//- block append page-bottom
+//-     include blocks/demo-page/modal/modal.pug

@@ -1,0 +1,27 @@
+header.header.theme
+    //- .box
+    //-     p Шапка
+    .header__inner
+        .header__logo
+            a.header__logo-link(href="/#")
+                svg.header__logo-img(width="94" height="20")
+                    use(xlink:href="#logo-icon")
+        .header__content
+            .header__content-item.header__nav
+                button(class="modal-btn" data-path="first" data-animation="fadeInUp" data-speed="500") Контакты
+            .header__content-item.header__social
+                a.header__social-link(href="/#")
+                    svg(width="18" height="16")
+                        use(xlink:href="#youtube-icon")
+                a.header__social-link(href="")
+                    svg(width="18" height="16")
+                        use(xlink:href="#instagram-icon")
+                a.header__social-link(href="")
+                    svg(width="18" height="16")
+                        use(xlink:href="#facebook-icon")
+            .header__content-item.header__time
+                p <span id="countdown">--:--</span> <span id="countdownText">до конца рабочего дня</span>
+            .header__content-item.header__switcher.theme__button
+                //- .theme__button-text Dark mode
+                input.theme__button-input#darkmode(type = "checkbox")
+                label.theme__button-label(for = "darkmode")

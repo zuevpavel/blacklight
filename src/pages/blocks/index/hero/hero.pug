@@ -1,0 +1,35 @@
+section.hero.custom-scroll.active.container-height-js
+    .hero__inner
+        video.hero__bg(autoplay loop muted)
+            //- <source src="./static/hh.mp4" type='video/mp4;'>
+            source(src="./static/bg-dark.mp4" type='video/mp4;')
+        .hero__main.box
+            .hero__column
+                h1.hero__title Делаем только то, что нас драйвит:
+                ul.hero__tags
+                    li.hero__tags-item стратегия
+                    li.hero__tags-item креатив
+                    li.hero__tags-item пиар
+                    li.hero__tags-item инфлюенс-маркетинг
+                    li.hero__tags-item видео
+                    li.hero__tags-item новые медиа
+                    li.hero__tags-item брендинг
+                    li.hero__tags-item дизайн
+            .hero__column.hero__column--right
+                h2.hero__title.hero__title--green Сложные задачи Смелый креатив Скорость
+                .hero__info
+                    .hero__descr
+                        p Работаем в паре «агентство + клиент»,<br> потому что в коллаборации получается лучший результат.
+                        p Мы не придумываем креатив ради креатива и всегда несем ответственность за свои идеи.
+                        p Это наша суперсила.
+                    button.hero__btn(class="modal-btn" data-path="second" data-animation="fadeInUp" data-speed="500") назначить встречу
+        .hero__bottom.box
+            a.hero__link(href="tel:+74993403383") +7 499 340 33 83
+                svg(width="18" height="18")
+                    use(xlink:href="#phone-icon")
+            a.hero__link(href="mailto:info@blacklight.ru") info@blacklight.ru
+                svg(width="18" height="18")
+                    use(xlink:href="#email-icon")
+            a.hero__link(href="https://goo.gl/maps/JLTgfscspkLMZ3zdA" target="_blank") Москва, Нижняя Красносельская,  35 стр 59, офис 301
+                svg(width="18" height="18")
+                    use(xlink:href="#location-icon")

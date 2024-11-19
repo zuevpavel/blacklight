@@ -1,0 +1,153 @@
+.hero {
+    overflow-y: auto;
+    display: grid;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+    &.active {
+        transform: translateY(0);
+    }
+}
+
+.hero__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color: $white;
+    background-color: $black;
+    z-index: -1;
+}
+
+.hero__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: 50% 44%;
+    transform: rotateY(180deg);
+}
+
+.hero__main {
+    display: grid;
+    height: 100%;
+    padding-top: 55px;
+    @include media-up--S {
+        grid-template-columns: 1.07fr 1fr;
+    }
+}
+
+.hero__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--right {
+        padding-top: 70px;
+    }
+}
+
+.hero__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    &--green {
+        color: #7CEF94;
+    }
+    @include media-up--M {
+        font-size: 50px;
+    }
+    @include media-up--L {
+        font-size: 72px;
+    }
+}
+
+.hero__tags {
+    max-width: 428px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.hero__tags-item {
+    padding: 8px 15px;
+    border: 2px solid;
+    border-radius: 999px;
+    margin: 2px;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.004em;
+    @include media-up--M {
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+}
+
+.hero__descr {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.004em;
+    margin-top: 25px;
+    @include media-up--M {
+        font-size: 22px;
+    }
+}
+
+.hero__btn {
+    padding: 10px 30px;
+    border: 2px solid #7CEF94;
+    color: #7CEF94;
+    border-radius: 999px;
+    margin: 2px;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.004em;
+    margin-top: 40px;
+}
+
+.hero__bottom {
+    width: 100%;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    @include media-up--S {
+        grid-auto-flow: column;
+    }
+}
+
+.hero__link {
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    padding-left: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.004em;
+    svg {
+        fill: $active-elem;
+        position: absolute;
+        left: 0;
+        margin-top: 1px;
+    }
+    @include media-up--S {
+        font-size: 18px;
+        svg {
+            margin-top: 3px;
+        }
+    }
+    @include media-up--XL {
+        font-size: 22px;
+        svg {
+            margin-top: 5px;
+        }
+    }
+}
