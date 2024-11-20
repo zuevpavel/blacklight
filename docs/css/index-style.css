@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --app-height: 100vh;
   --theme-bg-color: 0, 0, 0;
@@ -394,6 +395,21 @@ button {
       border-radius: 50%;
       background-color: rgba(var(--primary-color), 1);
       transition: all 0.3s; }
+
+.header__content-item.header__switcher.theme__button:before {
+  content: 'Нажми переключатель';
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 200px;
+  height: 120px;
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  text-align: end;
+  transition: all 0.3s; }
+  @media screen and (min-width: 577px) {
+    .header__content-item.header__switcher.theme__button:before {
+      font-size: 25px; } }
 
 .theme__button-input:checked + .theme__button-label {
   background-color: #7CEF94;

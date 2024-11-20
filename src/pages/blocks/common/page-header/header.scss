@@ -148,6 +148,24 @@
     }
 }
 
+.header__content-item.header__switcher.theme__button:before {
+    content: 'Нажми переключатель';
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    height: 120px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    text-align: end;
+    // font-size: 25px;
+    transition: all 0.3s;
+
+    @include media-up--XS {
+        font-size: 25px;
+    }
+}
+
 .theme__button-input:checked + .theme__button-label {
     background-color: $active-elem;
     border-color: transparent;
